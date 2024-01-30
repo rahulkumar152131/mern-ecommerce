@@ -1,0 +1,69 @@
+.user-rating-container {
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+
+    // border: 1px solid red;
+    .user-rating {
+        margin: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.5rem;
+
+        .name {
+            margin-right: 10px;
+        }
+
+        .image {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            font-size: 10px;
+
+            img {
+                border-radius: 50%;
+                display: flex;
+                border: 2px solid black;
+                box-shadow: 0 0 5px 2px black;
+                height: 100%;
+                width: 100%;
+                // object-fit: cover;
+                background-color: green;
+
+            }
+
+        }
+
+    }
+
+    .like-icon {
+        position: relative;
+        top: 4%;
+        left: 6%;
+        padding: 1%;
+        font-size: 1.7rem;
+        background-color: none;
+
+        .like-count {
+            position: absolute;
+            font-size: 15px;
+            top: -5px;
+            right: -10px;
+            color: red;
+
+        }
+
+        .like-btn {
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .like-btn:hover {
+            transform: scale(1.1);
+        }
+    }
+}

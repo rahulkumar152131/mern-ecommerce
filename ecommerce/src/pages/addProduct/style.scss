@@ -1,0 +1,150 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+
+.product-cotainer {
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+
+    // margin-left: 20%;
+
+    .name-error-and-label,
+    .price-error-and-label,
+    .category-error-and-label,
+    .size-error-and-label,
+    .description-error-and-label,
+    .stocks-error-and-label,
+    .productImage-error-and-label {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .field-error {
+            color: red;
+        }
+    }
+
+    .product-title {
+        display: flex;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .category-select-prefix__menu {
+        background-color: white;
+        color: black;
+    }
+
+    .product-name,
+    .price,
+    .stocks {
+        // background-color: red;
+
+        input {
+            font-size: 15px;
+            font-weight: 600;
+            padding: 0 3%;
+            // margin: 5px;
+            height: 37px;
+        }
+    }
+
+    .product-description {
+
+        textarea {
+            font-size: 15px;
+            font-weight: 600;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 37px;
+        }
+    }
+
+    >div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 60%;
+        margin: 1%;
+
+        label {
+            margin: 2% 0;
+        }
+    }
+
+    .product-image {
+        display: flex;
+        flex-direction: row;
+
+        .image-input {
+
+
+            ::file-selector-button {
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            input {
+                font-size: 15px;
+                font-weight: 600;
+                margin: 3% 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                // height: 50px;
+
+                #file-upload-button {
+                    color: red;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .preview {
+            width: 30%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .add-btn {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+
+        button {
+            font-size: 15px;
+            font-weight: 600;
+            width: 20%;
+            height: 30px;
+        }
+
+        .loading-animation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+        }
+    }
+}

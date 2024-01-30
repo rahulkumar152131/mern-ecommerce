@@ -1,0 +1,123 @@
+.product-details-container {
+    margin: 20px auto;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black);
+    // margin: 15px;
+    padding: 3px 3px 10px 3px;
+    border-radius: 5px;
+
+
+
+    .img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        height: 100%;
+
+        .img {
+            height: 25rem;
+            // cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            width: 100%;
+
+            button {
+                font-size: 15px;
+                font-weight: 600;
+                width: 50%;
+                height: 30px;
+            }
+
+
+        }
+    }
+
+    .product-details {
+        position: relative;
+        display: flex;
+        // align-items: center;
+        margin-left: 10%;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        padding-top: 20px;
+
+        .title,
+        .price,
+        .sizes,
+        .product-rating {
+            cursor: default;
+        }
+
+        .like-icon {
+            position: absolute;
+            top: 4%;
+            right: 10%;
+            padding: 1%;
+            font-size: 1.7rem;
+            background-color: none;
+
+            .like-count {
+                position: absolute;
+                font-size: 15px;
+                top: -5px;
+                right: -10px;
+                color: red;
+
+            }
+
+            .like-btn {
+                cursor: pointer;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .like-btn:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            width: 100%;
+
+            button {
+                font-size: 15px;
+                font-weight: 600;
+                width: 60%;
+                height: 30px;
+            }
+
+        }
+    }
+
+}
+
+.rarings-container {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    flex-direction: column;
+}
